@@ -1,0 +1,84 @@
+@import './variables';
+
+/*************************
+mixins
+*************************/
+
+@import'./mixins';
+
+/**************************
+Basic
+**************************/
+
+@import './basic';
+
+/**********************************
+nav_bar
+***********************************/
+
+@import './nav';
+
+/**********************************
+header
+***********************************/
+
+header{
+    background-color: $darkBlue;
+    color: $white;
+    padding: 0 60px;
+    @media(max-width:767px){
+        padding: 30px 30px;
+        text-align: center;
+        
+    }
+    @include flex(space-between, center, row);
+    div{
+        flex: 0 0 45%;
+        @media(max-width:767px){
+            flex: 0 0 100%;
+        }
+        img{
+            width: 100%;
+            padding: 50px 0;
+        }
+        h1{
+            font-size: 4rem;
+            span{
+                color: $pink;
+            }
+        }
+        button{
+            @include btn;
+        }
+    }
+}
+
+/*****************************
+section unlimited
+****************************/
+
+
+.unlimited{
+    padding: $padding;
+    @media(max-width:727px){
+        padding: 15px 0;
+    }
+    @include flex(space-between, center, row);
+    article{
+        flex: 0 0 48%;
+        @media(max-width:767px){
+            flex: 0 0 100%;
+            text-align: center;
+        }
+        
+        button{
+            @include btn;
+        }
+    }
+}
+
+/*****************************
+footer
+****************************/
+@import './footer';
+

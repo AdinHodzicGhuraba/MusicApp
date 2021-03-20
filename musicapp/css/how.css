@@ -1,0 +1,387 @@
+/*************************
+mixins
+*************************/
+/**************************
+Basic
+**************************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #0b193c;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #f91257;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #f91257;
+}
+
+.cont {
+  width: 80%;
+  margin: auto;
+}
+
+/**********************************
+nav_bar
+***********************************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #0b193c;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #f91257;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+nav {
+  background: #09192c;
+  padding: 30px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  nav h1 {
+    text-align: center;
+  }
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  nav ul {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  nav ul li {
+    margin-left: 0;
+  }
+}
+
+/**********************************
+header
+***********************************/
+.how {
+  padding: 80px 0;
+  background-color: #0b193c;
+  color: white;
+}
+
+.how h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.how .conteiner div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+@media (max-width: 767px) {
+  .how .conteiner div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    text-align: center;
+  }
+}
+
+.how .conteiner div i {
+  color: #f91257;
+  font-size: 4rem;
+  margin: 30px 0;
+}
+
+.how .conteiner div h3 {
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+}
+
+/*****************************
+concept section
+****************************/
+.concept .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.concept .text div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+  .concept .text div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 15px 0;
+  }
+}
+
+.concept .text div h2 {
+  font-size: 2.3rem;
+}
+
+.concept .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.concept .img div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .concept .img div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
+
+.concept .img div img {
+  border-radius: 40px;
+  width: 270px;
+  height: 250px;
+}
+
+@media (max-width: 727px) {
+  .concept .img div img {
+    width: 190px;
+    height: 140px;
+  }
+}
+
+.concept .img div p {
+  text-align: center;
+}
+
+/*****************************
+footer
+****************************/
+footer {
+  background: #09192c;
+  color: white;
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 15px;
+  }
+}
+
+footer a {
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
+footer p {
+  margin: 40px 0;
+}
+
+@media (max-width: 767px) {
+  footer p {
+    margin: 10px 0;
+  }
+}
+
+footer i {
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  footer i {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=how.css.map */

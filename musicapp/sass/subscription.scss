@@ -1,0 +1,136 @@
+@import './variables';
+
+/*************************
+mixins
+*************************/
+
+@import'./mixins';
+
+/**************************
+Basic
+**************************/
+
+@import './basic';
+
+/**********************************
+nav_bar
+***********************************/
+
+@import './nav';
+
+/**********************************
+price section
+***********************************/
+
+.price{
+    background: $darkBlue;
+    color: $white;
+    padding: 50px 0;
+
+    .cont{
+        @include flex(center, center, row);
+
+    article{
+        flex: 0 0 48%;
+        @media(max-width:767px){
+            flex: 0 0 100%;
+            text-align: center;
+        }
+
+        h3{
+            text-align: left;
+            font-size: 1.8rem;
+        }
+        h5{
+            text-align: left;
+            font-size: 1.4rem;
+            color: $pink;
+            padding: 10px 0;
+        }
+        p{
+            text-align: left;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        button{
+            @include btn;
+            font-size: .8rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        &:last-child{
+            border-radius: 15px;
+            background: rgba($white,.1);
+            padding: 30px ;
+            text-align: left;
+            flex: 0 0 47%;
+            margin-left: 45px;
+            @media(max-width:767px){
+                flex: 0 0 100%;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            @include flex(center,center,column);
+            ul{
+                li{
+                    padding: 10px;
+                    i{
+                        margin-right: 15px;
+                        color: $pink;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        
+    }
+     
+    }
+}
+
+/*****************************
+concept section
+****************************/
+
+.concept{
+    .text{
+        @include flex(space-between,flex-start,row);
+        div{
+            flex: 0 0 48%;
+            padding: 50px 0;
+            @media(max-width:767px){
+                flex: 0 0 100%;
+                padding: 15px 0;
+            }
+            
+            h2{
+                font-size: 2.3rem;
+            }
+        }
+    }
+        .img {
+            @include flex(space-between,center,row);
+            div{
+                flex: 0 0 15%;
+                padding-bottom: 50px;
+                @media(max-width:767px){
+                    flex: 0 0 45%;
+                }
+                
+                img{
+                    border-radius: 50%;
+                    width: 100%;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    
+}
+
+/*****************************
+footer
+****************************/
+@import './footer';
